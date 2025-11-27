@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajica Grupo - Catálogo Premium de Suplementos</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Suplementos premium de lujo con precisión científica y elegancia natural. Detox Green, Collagen Coffee, Marine Elixir y Factor Transfer.">
+    <meta name="keywords"
+        content="suplementos premium, nutrición de lujo, colágeno, detox, colágeno marino, soporte inmune">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased">
+
+    <!-- ======================================================================= -->
+    <!-- NAVIGATION - Premium Minimal con Logo -->
+    <!-- ======================================================================= -->
+
+    <nav
+        class="fixed w-full z-50 top-0 left-0 px-6 md:px-12 py-5 flex justify-between items-center bg-white/90 backdrop-blur-md border-b border-gray-100 dark:bg-gray-900/90 dark:border-gray-800 transition-all duration-300">
+
+        <!-- Brand con Logo -->
+        <div class="flex items-center gap-3">
+            <img src="images/logo-cg-icon.png" alt="CG Logo" class="h-10 w-auto">
+            <span class="text-2xl font-medium tracking-tight serif text-gray-900 dark:text-gray-100">Cajica Grupo</span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex gap-8 text-xs font-medium tracking-widest uppercase text-gray-500">
+            <a href="#detox"
+                class="hover:text-emerald-600 transition-colors duration-300 dark:hover:text-emerald-400">Manzana</a>
+            <a href="#coffee"
+                class="hover:text-amber-700 transition-colors duration-300 dark:hover:text-amber-500">Cafe</a>
+            <a href="#marine"
+                class="hover:text-purple-600 transition-colors duration-300 dark:hover:text-purple-400">Vainilla</a>
+            <a href="#factor" class="hover:text-rose-600 transition-colors duration-300 dark:hover:text-rose-400">Factor
+                Fresa</a>
+        </div>
+
+        <!-- Dark Mode Toggle (SIN botón Comprar) -->
+        <div class="flex items-center gap-4">
+            <button id="darkModeToggle" aria-label="Toggle Dark Mode"
+                class="p-2.5 rounded-full text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300">
+                <i data-lucide="moon" class="w-5 h-5 dark:hidden block"></i>
+                <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ======================================================================= -->
+    <!-- HERO - Editorial Premium con Logo H2O -->
+    <!-- ======================================================================= -->
+
+    <header
+        class="relative min-h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 z-0 opacity-5 dark:opacity-10">
+            <img src="images/alex(2).jpeg" class="w-full h-full object-cover" alt="Premium Background Texture"
+                loading="lazy">
+        </div>
+
+        <!-- Logo CG Grande (Punto Estratégico 1) -->
+        <div class="absolute top-32 right-12 opacity-10 dark:opacity-5">
+            <img src="images/logo-cg-icon.png" alt="CG" class="h-64 w-auto">
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto space-y-10 py-32">
+            <!-- Premium Badge -->
+            <span
+                class="inline-block py-2 px-4 border border-gray-300 rounded-full text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-4 fade-in-up dark:border-gray-700 dark:text-gray-400"
+                data-delay="0">
+                Producto Original 2025
+            </span>
+
+            <!-- Hero Title -->
+            <h1 class="text-6xl md:text-8xl lg:text-9xl text-gray-900 dark:text-gray-100 leading-[0.95] fade-in-up serif"
+                data-delay="100">
+                <span class="italic font-light block mb-3">Pureza</span>
+                <span class="font-normal tracking-tight">Interior</span>
+            </h1>
+
+            <!-- Hero Description -->
+            <p class="text-lg md:text-2xl font-light text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed fade-in-up"
+                data-delay="200">
+                Nutrición consciente diseñada con precisión científica y elegancia natural
+            </p>
+
+            <!-- CTA -->
+            <div class="fade-in-up pt-6" data-delay="300">
+                <a href="#detox"
+                    class="inline-flex items-center gap-3 px-8 py-4 bg-gray-900 text-white rounded-full text-sm font-medium tracking-wide uppercase hover:bg-gray-800 transition-all duration-300 hover:shadow-xl hover:scale-105 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100">
+                    Explorar Productos
+                    <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-12 w-full text-center fade-in-up" data-delay="400">
+            <div class="h-16 w-[1px] bg-gray-300 dark:bg-gray-700 mx-auto mb-4 animate-pulse"></div>
+            <span class="text-[10px] uppercase tracking-[0.3em] text-gray-400">Descubre</span>
+        </div>
+    </header>
+
+    <!-- ======================================================================= -->
+    <!-- PRODUCT 1: DETOX GREEN - Vibrant Emerald Theme -->
+    <!-- ======================================================================= -->
+
+    <section id="detox" class="min-h-screen flex flex-col md:flex-row bg-detox">
+        <!-- Product Image (CLICABLE para Modal) -->
+        <div class="w-full md:w-1/2 relative h-[60vh] md:h-auto overflow-hidden p-6 md:p-16">
+            <div class="w-full h-full relative rounded-lg overflow-hidden shadow-2xl image-container">
+                <img src="images/detox-green.jpg" class="absolute inset-0 w-full h-full object-cover image-premium"
+                    alt="Detox Green Premium Supplement" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Product Content -->
+        <div class="w-full md:w-1/2 p-8 md:p-20 lg:p-32 flex flex-col justify-center">
+            <div class="max-w-lg mx-auto md:mx-0 space-y-8">
+                <!-- Category -->
+                <div class="flex items-center gap-3 fade-in-up">
+                    <span class="h-[1px] w-12 bg-emerald-500"></span>
+                    <span
+                        class="text-xs uppercase tracking-[0.25em] text-emerald-700 font-semibold dark:text-emerald-400">
+                        Limpieza Profunda
+                    </span>
+                </div>
+
+                <!-- Product Title -->
+                <h2 class="text-5xl md:text-6xl lg:text-7xl serif leading-none">
+                    <span
+                        class="text-[rgb(69,199,173)] dark:text-[rgb(69,199,173)] transition-colors duration-700 ease-in-out">
+                        Detox
+                    </span>
+                </h2>
+
+
+                <p class="text-xl text-gray-500 font-light tracking-wide dark:text-gray-400">
+                    Manzana· 400g
+                </p>
+            </div>
+
+            <!-- Ingredients Section -->
+            <div class="border-t border-emerald-200 dark:border-emerald-900/50 pt-8 space-y-6 fade-in-up"
+                data-delay="200">
+                <div class="flex items-start gap-5">
+                    <div
+                        class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center">
+                        <i data-lucide="leaf" class="w-6 h-6 text-emerald-600 dark:text-emerald-400"></i>
+                    </div>
+                    <p class="text-base text-gray-600 leading-relaxed pt-2 dark:text-black-300">
+                        Hecho a base de <strong class="text-white-900 font-semibold dark:text-black-100">crema de coco
+                            y Proteína Whey</strong>.
+                        Espirulina, Chlorella, proteína de arveja, aguacate, espinaca, pepino cohombro, harina de
+                        almendras, harina de avena, banano, manzana, trozos de manzana, fresa, piña, linaza,
+                        pimienta negra, cúrcuma, omega-3.
+                    </p>
+                </div>
+
+                <!-- Vitamins & Minerals Grid -->
+                <div class="space-y-3 pt-4">
+                    <div>
+                        <h5
+                            class="text-xs font-semibold text-gray-700 dark:text-black-300 mb-2 uppercase tracking-wider">
+                            Vitaminas</h5>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge badge-emerald">Vit A</span>
+                            <span class="badge badge-emerald">Vit C</span>
+                            <span class="badge badge-emerald">Vit D</span>
+                            <span class="badge badge-emerald">Vit E</span>
+                            <span class="badge badge-emerald">B1</span>
+                            <span class="badge badge-emerald">B2</span>
+                            <span class="badge badge-emerald">B3</span>
+                            <span class="badge badge-emerald">B6</span>
+                            <span class="badge badge-emerald">B8</span>
+                            <span class="badge badge-emerald">B12</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h5
+                            class="text-xs font-semibold text-gray-700 dark:text-black-300 mb-2 uppercase tracking-wider">
+                            Minerales</h5>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge badge-emerald">Hierro</span>
+                            <span class="badge badge-emerald">Calcio</span>
+                            <span class="badge badge-emerald">Magnesio</span>
+                            <span class="badge badge-emerald">Zinc</span>
+                            <span class="badge badge-emerald">Selenio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits -->
+            <div class="space-y-6 fade-in-up" data-delay="300">
+                <div class="space-y-2">
+                    <h4
+                        class="text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-gray-100 flex items-center gap-2">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        Purifica
+                    </h4>
+                    <p class="text-sm text-gray-600 leading-relaxed pl-4 dark:text-black-400">
+                        Elimina metales pesados gracias al poder quelante de la Chlorella
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h4
+                        class="text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-gray-100 flex items-center gap-2">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        Desinflama
+                    </h4>
+                    <p class="text-sm text-gray-600 leading-relaxed pl-4 dark:text-black-400">
+                        Acción sistémica de la Cúrcuma para reducir la hinchazón abdominal
+                    </p>
+                </div>
+            </div>
+
+            <!-- Registration (Discreet) -->
+            <div
+                class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 flex justify-between items-center text-[10px] text-black-400 uppercase tracking-widest opacity-60">
+                <span>RSA-0021928-2022</span>
+                <span>Ref. 01</span>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- PRODUCT 2: COLLAGEN COFFEE - Warm Latte Theme -->
+    <!-- ======================================================================= -->
+
+    <section id="coffee" class="min-h-screen flex flex-col md:flex-row-reverse bg-coffee">
+        <!-- Product Image (CLICABLE) -->
+        <div class="w-full md:w-1/2 relative h-[60vh] md:h-auto overflow-hidden p-6 md:p-16">
+            <div class="w-full h-full relative rounded-lg overflow-hidden shadow-2xl image-container">
+                <img src="images/collagen-coffee.jpg" class="absolute inset-0 w-full h-full object-cover image-premium"
+                    alt="Collagen Coffee Premium Supplement" loading="lazy">
+
+            </div>
+        </div>
+
+        <!-- Product Content -->
+        <div class="w-full md:w-1/2 p-8 md:p-20 lg:p-32 flex flex-col justify-center">
+            <div class="max-w-lg mx-auto md:mx-0 space-y-8">
+                <div class="flex items-center gap-3 justify-end md:justify-start fade-in-up">
+                    <span class="h-[1px] w-12 bg-amber-600 dark:bg-amber-500"></span>
+                    <span class="text-xs uppercase tracking-[0.25em] text-amber-800 font-semibold dark:text-amber-400">
+                        Ritual Diario
+                    </span>
+                </div>
+
+                <div class="space-y-2 text-right md:text-left fade-in-up" data-delay="100">
+                    <h2 class="text-5xl md:text-6xl lg:text-7xl serif leading-none">
+                        <span
+                            class="text-[rgb(66, 25, 3)] dark:text-[rgb(66, 25, 3)] transition-colors duration-700 ease-in-out">
+                            Collagen
+                        </span>
+                        <span
+                            class="italic font-normal text-amber-700 dark:text-amber-500 transition-colors duration-700 ease-in-out">
+                            Coffee
+                        </span>
+                    </h2>
+
+                    <p class="text-xl text-gray-500 font-light tracking-wide dark:text-gray-400">
+                        Café Colombiano & Vainilla
+                    </p>
+                </div>
+
+                <div class="border-t border-amber-200 dark:border-amber-900/50 pt-8 space-y-6 fade-in-up"
+                    data-delay="200">
+                    <div class="flex items-start gap-5 justify-end md:justify-start text-right md:text-left">
+                        <div
+                            class="order-2 md:order-1 flex-shrink-0 w-12 h-12 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center">
+                            <i data-lucide="coffee" class="w-6 h-6 text-amber-700 dark:text-amber-500"></i>
+                        </div>
+                        <p class="order-1 md:order-2 text-base text-gray-600 leading-relaxed pt-2 dark:text-black-100">
+                            Base de crema de coco y Proteína Whey.
+                            <strong class="text-black-100 font-semibold">
+                                13g de colágeno bovino
+                            </strong>
+                            por porción, café colombiano 100%, almendras, sabor a vainilla.
+                        </p>
+
+                    </div>
+
+                    <div class="space-y-3 pt-4">
+                        <div class="text-right md:text-left">
+                            <h5
+                                class="text-xs font-semibold text-gray-700 dark:text-black-100 mb-2 uppercase tracking-wider">
+                                Vitaminas</h5>
+                            <div class="flex flex-wrap gap-2 justify-end md:justify-start">
+                                <span class="badge badge-latte">Vit A</span>
+                                <span class="badge badge-latte">Vit C</span>
+                                <span class="badge badge-latte">Vit D</span>
+                                <span class="badge badge-latte">Vit E</span>
+                                <span class="badge badge-latte">B1</span>
+                                <span class="badge badge-latte">B2</span>
+                                <span class="badge badge-latte">B3</span>
+                                <span class="badge badge-latte">B6</span>
+                                <span class="badge badge-latte">B8</span>
+                                <span class="badge badge-latte">B12</span>
+                            </div>
+                        </div>
+                        <div class="text-right md:text-left">
+                            <h5
+                                class="text-xs font-semibold text-gray-700 dark:text-black-300 mb-2 uppercase tracking-wider">
+                                Minerales</h5>
+                            <div class="flex flex-wrap gap-2 justify-end md:justify-start">
+                                <span class="badge badge-latte">Hierro</span>
+                                <span class="badge badge-latte">Calcio</span>
+                                <span class="badge badge-latte">Magnesio</span>
+                                <span class="badge badge-latte">Zinc</span>
+                                <span class="badge badge-latte">Selenio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6 text-right md:text-left fade-in-up" data-delay="300">
+                    <div class="space-y-2">
+                        <h4
+                            class="text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-black-100 flex items-center gap-2 justify-end md:justify-start">
+                            <span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                            Estructura
+                        </h4>
+                        <p class="text-sm text-gray-600 leading-relaxed pr-4 md:pr-0 md:pl-4 dark:text-black-400">
+                            Fortalece cabello y uñas desde la matriz celular
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <h4
+                            class="text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-black-100 flex items-center gap-2 justify-end md:justify-start">
+                            <span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                            Energía
+                        </h4>
+                        <p class="text-sm text-gray-600 leading-relaxed pr-4 md:pr-0 md:pl-4 dark:text-black-400">
+                            Cafeína natural y proteína whey para un impulso sostenido
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 flex justify-between items-center text-[10px] text-black-400 uppercase tracking-widest opacity-60">
+                    <span>RSA-0021928-2022</span>
+                    <span>Ref. 02</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- PRODUCT 3: MARINE ELIXIR - Lavender/Ocean Theme -->
+    <!-- ======================================================================= -->
+
+    <section id="marine" class="min-h-screen flex flex-col md:flex-row bg-marine">
+        <!-- Product Image (CLICABLE) -->
+        <div class="w-full md:w-1/2 relative h-[60vh] md:h-auto overflow-hidden p-6 md:p-16">
+            <div class="w-full h-full relative rounded-lg overflow-hidden shadow-2xl image-container">
+                <img src="images/marine-elixir.jpg" class="absolute inset-0 w-full h-full object-cover image-premium"
+                    alt="Marine Elixir Premium Supplement" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Product Content -->
+        <div class="w-full md:w-1/2 p-8 md:p-20 lg:p-32 flex flex-col justify-center">
+            <div class="max-w-lg mx-auto md:mx-0 space-y-8">
+                <div class="flex items-center gap-3 fade-in-up">
+                    <span class="h-[1px] w-12 bg-purple-500"></span>
+                    <span
+                        class="text-xs uppercase tracking-[0.25em] text-purple-700 font-semibold dark:text-purple-400">
+                        Ciencia Anti-Edad
+                    </span>
+                </div>
+
+                <div class="space-y-2 fade-in-up" data-delay="100">
+                    <h2 class="text-5xl md:text-6xl lg:text-7xl serif text-[rgb(171,125,73)] leading-none">
+                        Marino <span class="italic text-purple-600 font-normal dark:text-purple-400">Elixir</span>
+                    </h2>
+
+
+                    <p class="text-xl text-gray-500 font-light tracking-wide dark:text-black-400">
+                        Vainilla & Resveratrol
+                    </p>
+                </div>
+
+                <div class="border-t border-purple-200 dark:border-purple-900/50 pt-8 space-y-6 fade-in-up"
+                    data-delay="200">
+                    <div class="flex items-start gap-5">
+                        <div
+                            class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center">
+                            <i data-lucide="droplets" class="w-6 h-6 text-purple-600 dark:text-purple-400"></i>
+                        </div>
+                        <p class="text-base text-gray-600 leading-relaxed pt-2 dark:text-black-100">
+                            Base de crema de coco y Proteína Whey. <strong
+                                class="text-black-100 font-semibold dark:text-black-100">13g de colágeno marino
+                                hidrolizado</strong> por porción,
+                            uva liofilizada (Resveratrol), sabor a vainilla.
+                        </p>
+                    </div>
+
+                    <div class="space-y-3 pt-4">
+                        <div>
+                            <h5
+                                class="text-xs font-semibold text-gray-700 dark:text-black-100 mb-2 uppercase tracking-wider">
+                                Vitaminas</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-lavender">Vit A</span>
+                                <span class="badge badge-lavender">Vit C</span>
+                                <span class="badge badge-lavender">Vit D</span>
+                                <span class="badge badge-lavender">Vit E</span>
+                                <span class="badge badge-lavender">B1</span>
+                                <span class="badge badge-lavender">B2</span>
+                                <span class="badge badge-lavender">B3</span>
+                                <span class="badge badge-lavender">B6</span>
+                                <span class="badge badge-lavender">B8</span>
+                                <span class="badge badge-lavender">B12</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h5
+                                class="text-xs font-semibold text-gray-700 dark:text-black-300 mb-2 uppercase tracking-wider">
+                                Minerales</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-lavender">Hierro</span>
+                                <span class="badge badge-lavender">Calcio</span>
+                                <span class="badge badge-lavender">Magnesio</span>
+                                <span class="badge badge-lavender">Zinc</span>
+                                <span class="badge badge-lavender">Selenio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6 fade-in-up" data-delay="300">
+                    <div class="space-y-2">
+                        <h4
+                            class="text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-black-100 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                            Antioxidante
+                        </h4>
+                        <p class="text-sm text-gray-600 leading-relaxed pl-4 dark:text-black-400">
+                            Combate radicales libres y frena el fotoenvejecimiento
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <h4
+                            class="text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-black-100 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                            Absorción
+                        </h4>
+                        <p class="text-sm text-gray-600 leading-relaxed pl-4 dark:text-black-400">
+                            Péptidos bioactivos de bajo peso molecular para máxima asimilación
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 flex justify-between items-center text-[10px] text-black-400 uppercase tracking-widest opacity-60">
+                    <span>RSA-0021928-2022</span>
+                    <span>Ref. 03</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- PRODUCT 4: FACTOR TRANSFER - Rose/Blush Theme -->
+    <!-- ======================================================================= -->
+
+    <section id="factor" class="min-h-screen flex flex-col md:flex-row-reverse bg-factor">
+        <!-- Product Image (CLICABLE) -->
+        <div class="w-full md:w-1/2 relative h-[60vh] md:h-auto overflow-hidden p-6 md:p-16">
+            <div class="w-full h-full relative rounded-lg overflow-hidden shadow-2xl image-container">
+                <img src="images/factor-transfer.png" class="absolute inset-0 w-full h-full object-cover image-premium"
+                    alt="Factor Transfer Premium Supplement" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Product Content -->
+        <div class="w-full md:w-1/2 p-8 md:p-20 lg:p-32 flex flex-col justify-center">
+            <div class="max-w-lg mx-auto md:mx-0 space-y-8">
+                <div class="flex items-center gap-3 justify-end md:justify-start fade-in-up">
+                    <span class="h-[1px] w-12 bg-rose-500"></span>
+                    <span class="text-xs uppercase tracking-[0.25em] text-rose-700 font-semibold dark:text-rose-400">
+                        Inmunidad Total
+                    </span>
+                </div>
+
+                <div class="space-y-2 text-right md:text-left fade-in-up" data-delay="100">
+                    <h2 class="text-5xl md:text-6xl lg:text-7xl serif">
+                        Factor <span class="italic text-rose-600 font-normal dark:text-rose-400">Transfer</span>
+                    </h2>
+
+                    <p class="text-xl text-gray-500 font-light tracking-wide dark:text-gray-400">
+                        Fresa & Shiitake · 400g
+                    </p>
+                </div>
+
+                <div class="border-t border-rose-200 dark:border-rose-900/50 pt-8 space-y-6 fade-in-up"
+                    data-delay="200">
+                    <div class="flex items-start gap-5 justify-end md:justify-start text-right md:text-left">
+                        <div
+                            class="order-2 md:order-1 flex-shrink-0 w-12 h-12 rounded-full bg-rose-100 dark:bg-rose-900/30 flex items-center justify-center">
+                            <i data-lucide="shield" class="w-6 h-6 text-rose-600 dark:text-rose-400"></i>
+                        </div>
+                        <p class="order-1 md:order-2 text-base text-gray-600 leading-relaxed pt-2 dark:text-black-100">
+                            Base de crema de coco y Proteína Whey. <strong
+                                class="text-black-100 font-semibold dark:text-black-100">5g de calostro bovino</strong>
+                            por porción,
+                            hongo Shiitake, sabor a fresa.
+                        </p>
+                    </div>
+
+                    <div class="space-y-3 pt-4">
+                        <div class="text-right md:text-left">
+                            <h5
+                                class="text-xs font-semibold text-gray-700 dark:text-black-100 mb-2 uppercase tracking-wider">
+                                Vitaminas</h5>
+                            <div class="flex flex-wrap gap-2 justify-end md:justify-start">
+                                <span class="badge badge-rose">Vit A</span>
+                                <span class="badge badge-rose">Vit C</span>
+                                <span class="badge badge-rose">Vit D</span>
+                                <span class="badge badge-rose">Vit E</span>
+                                <span class="badge badge-rose">B1</span>
+                                <span class="badge badge-rose">B2</span>
+                                <span class="badge badge-rose">B3</span>
+                                <span class="badge badge-rose">B6</span>
+                                <span class="badge badge-rose">B8</span>
+                                <span class="badge badge-rose">B12</span>
+                            </div>
+                        </div>
+                        <div class="text-right md:text-left">
+                            <h5
+                                class="text-xs font-semibold text-gray-700 dark:text-black-100 mb-2 uppercase tracking-wider">
+                                Minerales</h5>
+                            <div class="flex flex-wrap gap-2 justify-end md:justify-start">
+                                <span class="badge badge-rose">Hierro</span>
+                                <span class="badge badge-rose">Calcio</span>
+                                <span class="badge badge-rose">Magnesio</span>
+                                <span class="badge badge-rose">Zinc</span>
+                                <span class="badge badge-rose">Selenio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6 text-right md:text-left fade-in-up" data-delay="300">
+                    <div class="space-y-2">
+                        <h4
+                            class="text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-black-100 flex items-center gap-2 justify-end md:justify-start">
+                            <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+                            Defensa
+                        </h4>
+                        <p class="text-sm text-gray-600 leading-relaxed pr-4 md:pr-0 md:pl-4 dark:text-black-400">
+                            Prepara tu sistema inmune ante amenazas externas
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <h4
+                            class="text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-black-100 flex items-center gap-2 justify-end md:justify-start">
+                            <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+                            Bienestar Intestinal
+                        </h4>
+                        <p class="text-sm text-gray-600 leading-relaxed pr-4 md:pr-0 md:pl-4 dark:text-black-400">
+                            Repara la barrera intestinal y optimiza la microbiota
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 flex justify-between items-center text-[10px] text-black-400 uppercase tracking-widest opacity-60">
+                    <span>RSA-0021928-2022</span>
+                    <span>Ref. 04</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- FOOTER - Clean Premium con Logo -->
+    <!-- ======================================================================= -->
+
+    <footer
+        class="relative backdrop-blur-md bg-[#060215]/70 text-gray-200 py-24 px-8 border-t border-white/10 transition-all duration-700">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16">
+
+                <!-- LOGO A LA IZQUIERDA -->
+                <div class="space-y-8">
+                    <div class="text-white">
+                        <h1 class="text-6xl font-semibold tracking-wide">C&nbsp;&nbsp;G</h1>
+
+                        <p class="uppercase text-sm tracking-widest mt-1">
+                            Cajica Grupo
+                        </p>
+
+                        <p class="uppercase text-sm tracking-widest mt-1">
+                            Catálogo Suplementos Dietarios
+                        </p>
+                    </div>
+
+                    <div class="space-y-3 text-sm text-gray-300">
+                        <p class="flex items-center gap-3">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            Colombia / Panamá
+                        </p>
+                    </div>
+                </div>
+
+                <!-- LINKS DERECHA -->
+                <div class="flex flex-col md:items-end justify-between space-y-8">
+                    <nav class="flex flex-wrap gap-8 text-xs uppercase tracking-wider text-gray-400">
+                        <a href="https://www.instagram.com/cygpro/" target="_blank"
+                            class="hover:text-white transition-colors duration-300 flex items-center gap-2">
+                            <i data-lucide="instagram" class="w-4 h-4"></i>
+                            @cygpro
+                        </a>
+
+                        <a href="https://wa.me/573027118195" target="_blank"
+                            class="hover:text-white transition-colors duration-300 flex items-center gap-2">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            Colombia: +57 302 711 8195
+                        </a>
+
+                        <a href="https://wa.me/50764887158" target="_blank"
+                            class="hover:text-white transition-colors duration-300 flex items-center gap-2">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            Panamá: +507 6488 7158
+                        </a>
+
+                        <a href="mailto:contacto@cajicagrupo.com"
+                            class="hover:text-white transition-colors duration-300 flex items-center gap-2">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            Email
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- PARTE INFERIOR CENTRADA -->
+            <div class="text-center mt-16">
+                <p class="text-[10px] uppercase tracking-[0.25em] text-gray-400 mb-3">
+                    Romanos 11:36
+                </p>
+
+                <p class="text-xs text-gray-400">
+                    © 2025 Cajica Grupo. Designed by Brikman Paul
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- ======================================================================= -->
+    <!-- SCRIPTS -->
+    <!-- ======================================================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
